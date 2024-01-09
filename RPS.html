@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="RPS-styles/general.css">
+    <link rel="stylesheet" href="RPS-styles/main.css">
+    <script src="RPS.js"></script>
+  </head>
+  <body>
+    <div class="parent-container">
+      <h1>Rock Paper & Scissors<div class="h1c emojis">😿</div></h1>
+      <p class="jsb js-result result">Result will be shown here.</p>
+
+      <button class="rock-button rock" onclick="playGame('🪨');">Rock</button>
+      <button class="paper-button paper" onclick="playGame('🧻');">Paper</button>
+      <button class="scissor-button scissor" onclick="playGame('✂️')">Scissors</button>
+
+      <p class="jsb js-moves moves">Your move.<p class="js-moves comMove">Computer move.</p></p>
+      <p class="jsb js-score score" >Score will be shown here.</p>
+      <div class="reset-button-container"><button class="reset-button reset" onclick="score.wins = 0; score.losses = 0; score.ties = 0; localStorage.removeItem('score'); updateScoreElement();">Reset Score</button></div>
+      
+    </div>
+  </body>
+</html>
